@@ -39,8 +39,11 @@ class syntax_plugin_localexplorer extends \dokuwiki\Extension\SyntaxPlugin
         $path = str_replace('"', '', $matches[1]);
         $title = $matches[2];
 
+        // Apply rawurlencode to the path
+        $encodedPath = rawurlencode($path);
+
         // Construct the HTML link
-        $html = '<a href="localexplorer:' . str_replace('\\', '/', $path) . '">' . $title . '</a>';
+        $html = '<a href="localexplorer:' . str_replace('\\', '/', $encodedPath) . '">' . $title . '</a>';
 
         return $html;
     }
