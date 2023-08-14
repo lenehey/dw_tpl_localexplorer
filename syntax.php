@@ -35,7 +35,7 @@ class syntax_plugin_localexplorer extends \dokuwiki\Extension\SyntaxPlugin
     public function handle($match, $state, $pos, Doku_Handler $handler)
     {
         // Extract path and title from the match
-        preg_match('/\[\[localexplorer>([^|"]+)\|([^]]+)\]\]/i', $match, $matches);
+        preg_match('/\[\[localexplorer>([^|]+)\|([^]]+)\]\]/i', $match, $matches);
         $path = str_replace('"', '', $matches[1]);
         $title = $matches[2];
 
