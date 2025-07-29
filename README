@@ -1,3 +1,7 @@
+NOTE:  This plugin is NOT NEEDED.  You can achieve the same functionality using
+Dokuwiki's built-in interwiki function.  See the Dokuwiki page for this plugin for details.
+
+
 localexplorer plugin for DokuWiki
 
 Creates localexplorer links in dokuwiki
